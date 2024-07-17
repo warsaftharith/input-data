@@ -112,7 +112,7 @@ if (isset($_POST['update'])) {
         <form action="edit-data.php?id=<?php echo $id; ?>" method="POST">
             <div class="mb-3">
                 <label for="npm" class="form-label">NIM</label>
-                <input type="text" class="form-control" id="npm" name="npm" value="<?php echo htmlspecialchars($row['npm']); ?>" pattern="\d{11}" title="NIM terdiri dari 11 angka atau lebih" required>
+                <input type="text" class="form-control" id="npm" name="npm" value="<?php echo htmlspecialchars($row['npm']); ?>" required>
             </div>
             
             <div class="mb-3">
