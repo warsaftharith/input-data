@@ -13,40 +13,40 @@ session_start();
     <!-- Custom CSS -->
     <style>
         body {
-            background-color: #121212; /* Warna latar belakang gelap */
-            color: #ffffff; /* Warna teks putih */
+            background-color: #121212; 
+            color: #ffffff; 
             padding-top: 70px; 
             position: relative;
             min-height: 100vh; 
         }
         .navbar, .form-container, .card {
-            background-color: #1f1f1f; /* Warna latar belakang elemen */
-            color: #ffffff; /* Warna teks elemen */
+            background-color: #1f1f1f; 
+            color: #ffffff; 
         }
         .navbar-brand, .nav-link, .footer a {
-            color: #ffffff; /* Warna teks elemen */
+            color: #ffffff; 
         }
         .nav-link:hover, .footer a:hover {
-            color: #cccccc; /* Warna teks elemen saat hover */
+            color: #cccccc; 
         }
         .form-container {
             max-width: 800px;
             margin: auto;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Warna bayangan gelap */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
         }
         .form-control, .btn-primary {
-            background-color: #2c2c2c; /* Warna latar belakang input */
-            color: #ffffff; /* Warna teks input */
-            border-color: #444444; /* Warna border input */
+            background-color: #2c2c2c; 
+            color: #ffffff; 
+            border-color: #444444; 
         }
         .form-control::placeholder {
-            color: #aaaaaa; /* Warna placeholder input */
+            color: #aaaaaa; 
         }
         .footer {
-            background-color: #343a40; /* Warna latar belakang footer */
-            color: #ffffff; /* Warna teks footer */
+            background-color: #343a40; 
+            color: #ffffff; 
             padding: 10px 0; 
             margin-top: 12%;
             text-align: center;
