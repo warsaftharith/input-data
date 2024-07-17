@@ -25,7 +25,7 @@
             border-color: #444;
         }
         .table tbody tr td {
-            color: white; /* Menambahkan warna putih untuk teks di tbody */
+            color: white; 
         }
         .btn-primary {
             background-color: #3a3a3a;
@@ -47,18 +47,18 @@
         border-collapse: collapse;
     }
     table tr {
-        background-color: #000; /* Warna latar belakang hitam */
+        background-color: #000; 
     }
     table td {
-        color: #fff; /* Warna teks putih */
+        color: #fff; 
         padding: 8px;
-        border: 1px solid #ddd; /* Opsional, untuk memberi garis pembatas */
+        border: 1px solid #ddd; 
     }
     table th {
-        background-color: #333; /* Warna latar belakang header tabel */
-        color: #fff; /* Warna teks header tabel */
+        background-color: #333; 
+        color: #fff; 
         padding: 8px;
-        border: 1px solid #ddd; /* Opsional, untuk memberi garis pembatas */
+        border: 1px solid #ddd; 
     }
     .add-data-icon {
         display: inline-block;
