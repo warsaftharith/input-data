@@ -112,7 +112,7 @@ if (isset($_POST['update'])) {
         <form action="edit-data.php?id=<?php echo $id; ?>" method="POST">
             <div class="mb-3">
                 <label for="npm" class="form-label">NIM</label>
-                <input type="text" class="form-control" id="npm" name="npm" value="<?php echo htmlspecialchars($row['npm']); ?>" required>
+                <input type="text" class="form-control" id="npm" name="npm" value="<?php echo htmlspecialchars($row['npm']); ?>" pattern="\d{11}" title="NIM terdiri dari 11 angka atau lebih" required>
             </div>
             
             <div class="mb-3">
@@ -149,5 +149,11 @@ if (isset($_POST['update'])) {
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Validasi input NIM
+        document.getElementById('npm').addEventListener('input', function (e) {
+            this.value = this.value.replace(/[^0-9]/g, ''); 
+        });
+    </script>
 </body>
 </html>
