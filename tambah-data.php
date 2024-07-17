@@ -85,14 +85,17 @@ if (isset($_POST["submit"])) {
             <form action="" method="POST">
                 <div class="mb-3">
                     <label for="nama" class="form-label dark">Nama</label>
-                    <input type="text" class="form-control" id="nama" name="nama" required>
+                    <p class="contoh"><i>*Input Nama Contoh "budi"*</i></p>
+                    <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan Nama" required>
                 </div>
                 <div class="mb-3">
                     <label for="npm" class="form-label">NIM</label>
-                    <input type="text" class="form-control" id="npm" name="npm" pattern="\d{11}" title="NIM terdiri dari 11 angka atau lebih" required>
+                    <p class="contoh"><i>*Input Menggunakan Angka*</i></p>
+                    <input type="text" class="form-control" id="npm" name="npm" pattern="\d{11}" title="NIM terdiri dari 11 angka atau lebih" placeholder="Masukkan Angka" required>
                 </div>
                 <div class="mb-3">
                     <label for="prodi" class="form-label">Program Studi</label>
+                    <p class="contoh"><i>*Pilih Salah Satu*</i></p>
                     <select class="form-select" id="prodi" name="prodi" required>
                         <option value="Pendidikan Informatika">Pendidikan Informatika</option>
                         <option value="Pendidikan Matematika">Pendidikan Matematika</option>
@@ -104,16 +107,20 @@ if (isset($_POST["submit"])) {
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+                    <p class="contoh"><i>*Input Email Contoh "budi@gmail.com"*</i></p>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan Email" required>
                 </div>
                 <div class="mb-3">
                     <label for="alamat" class="form-label">Alamat</label>
-                    <textarea class="form-control" id="alamat" name="alamat" rows="5" required></textarea>
+                    <p class="contoh"><i>*Contoh "Selong"*</i></p>
+                    <textarea class="form-control" id="alamat" name="alamat" rows="5" placeholder="Masukkan Alamat"required></textarea>
                 </div>
                 <button type="submit" name="submit" class="btn btn-primary">Simpan Data</button>
+                <br>
             </form>
         </div>
     </div>
+    
 
     <!-- Bootstrap JS Bundle (popper.js and bootstrap.js) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
